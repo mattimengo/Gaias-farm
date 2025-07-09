@@ -1,0 +1,8 @@
+﻿  avatar.cpp
+\avatar.cpp(1,1): error C1083: Non è possibile aprire il file origine: 'avatar.cpp': No such file or directory
+  (compilazione del file di origine '/avatar.cpp')
+  
+  main2.cpp
+\main2.cpp(1,1): error C1083: Non è possibile aprire il file origine: 'main2.cpp': No such file or directory
+  (compilazione del file di origine '/main2.cpp')
+  

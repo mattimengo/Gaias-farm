@@ -22,12 +22,12 @@ target_include_directories(${PROJECT_NAME} PRIVATE
     "C:/Users/matti/Desktop/Gioco C/SFML-2.6.2/include"
 )
 
-# Collega le librerie SFML
+# Collega le librerie in base al tipo di build
 target_link_libraries(${PROJECT_NAME}
-    sfml-graphics
-    sfml-window
-    sfml-system
-    sfml-audio
+    debug sfml-graphics-d optimized sfml-graphics
+    debug sfml-window-d   optimized sfml-window
+    debug sfml-system-d   optimized sfml-system
+    debug sfml-audio-d    optimized sfml-audio
 )
 
 # Visual Studio console

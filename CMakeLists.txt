@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.15)
 project(Esame)
 
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 # Cartella output eseguibile
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/build/x64/Release)
 
@@ -8,7 +11,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/build/x64/Release)
 set(SFML_DIR "C:/Users/matti/Desktop/Gioco C/SFML-2.6.2/lib/cmake/SFML")
 
 # Trova SFML
-find_package(SFML 2.5 COMPONENTS system window graphics audio REQUIRED)
+find_package(SFML 2.6.2 COMPONENTS system window graphics audio REQUIRED)
 
 # Percorsi CSFML aggiornati (con sottocartella msvc)
 set(CSFML_INCLUDE_DIR "C:/Users/matti/Desktop/Gioco C/CSFML/include")

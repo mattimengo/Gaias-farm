@@ -29,7 +29,7 @@ link_directories(
 # File sorgenti
 set(SOURCES
    
-    main2.cpp
+    main.cpp
     avatar.cpp
     avatar.h
 )

@@ -363,6 +363,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\matti\Desktop\Esame\main.c" />
     <ClCompile Include="C:\Users\matti\Desktop\Esame\main2.cpp" />
     <ClCompile Include="C:\Users\matti\Desktop\Esame\avatar.cpp" />
+    <ClInclude Include="C:\Users\matti\Desktop\Esame\avatar.h" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

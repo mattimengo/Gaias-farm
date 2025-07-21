@@ -12,9 +12,17 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="C:\Users\matti\Desktop\Esame\avatar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
     <CustomBuild Include="C:\Users\matti\Desktop\Esame\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4AE4B418-FC16-31EB-AF9D-835705B4F282}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{D943D6D4-AB57-3F0A-9E61-2DDCB9CAA971}</UniqueIdentifier>
     </Filter>

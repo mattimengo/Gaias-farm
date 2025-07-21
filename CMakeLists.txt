@@ -42,3 +42,9 @@ target_link_libraries(Esame
     csfml-graphics
     csfml-audio
 )
+
+#pausa?
+if(MSVC)
+    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /SUBSYSTEM:CONSOLE")
+endif()
+

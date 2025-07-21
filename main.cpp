@@ -8,13 +8,13 @@
 using namespace std::chrono;
 
 //dichiarazioni funzioni
-int gioco1(sf::RenderWindow& window, sf::Event event, bool* TP, bool* TM, bool* TG, bool* MT, bool* FO, bool* BA, bool* CA, bool* CO, bool* UV, bool* OL, bool* F, bool* D, bool* S1, bool* N1, bool* S2, bool* N2);
+int main(sf::RenderWindow& window, sf::Event event, bool* TP, bool* TM, bool* TG, bool* MT, bool* FO, bool* BA, bool* CA, bool* CO, bool* UV, bool* OL, bool* F, bool* D, bool* S1, bool* N1, bool* S2, bool* N2);
 
 
 
 
 //funzione per il gioco
-int gioco1(sf::RenderWindow& window, sf::Event event, bool* TP, bool* TM, bool* TG, bool* MT, bool* FO, bool* BA, bool* CA, bool* CO, bool* UV, bool* OL, bool* F, bool* D, bool* S1, bool* N1, bool* S2, bool* N2) {
+int main(sf::RenderWindow& window, sf::Event event, bool* TP, bool* TM, bool* TG, bool* MT, bool* FO, bool* BA, bool* CA, bool* CO, bool* UV, bool* OL, bool* F, bool* D, bool* S1, bool* N1, bool* S2, bool* N2) {
 	// Caricamento della texture solo quando necessario
 	sf::Texture texture;
 	if (!texture.loadFromFile("assets/map_2.jpg")) {

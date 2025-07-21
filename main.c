@@ -80,7 +80,7 @@ int main(sfRenderWindow* wp, sfRenderWindow* wimp) {
     sfRenderWindow* window = sfRenderWindow_create(mode, "Gioco", sfResize | sfClose, NULL);
     if (!window) return 1;
 
-    sfMouse_setPosition((sfVector2i) { 560, 600 }, window);
+    sfMouse_setPosition((sfVector2i){560,600}, (const sfWindow*)window);
 
     //display della finestra
     sfRenderWindow_display(window);
@@ -105,7 +105,7 @@ int main(sfRenderWindow* wp, sfRenderWindow* wimp) {
 
 
         //comandi
-        sfVector2i mouse = sfMouse_getPosition(window);
+        sfVector2i mouse = sfMouse_getPositionRenderWindow((const sfWindow*)window);
         printf("position = (%d;%d)\n", mouse.x, mouse.y);
 
 
@@ -713,7 +713,7 @@ int profilo(sfRenderWindow* window, sfEvent event, sfRenderWindow* wimp) {
 
 
 
-    sfMouse_setPosition((sfVector2i) { 1123, 525 }, wp);
+    sfMouse_setPosition((sfVector2i){1123,525}, (const sfWindow*)window);
 
     // Ciclo principale
     while (sfRenderWindow_isOpen(wp)) {
@@ -1266,8 +1266,7 @@ int profilo(sfRenderWindow* window, sfEvent event, sfRenderWindow* wimp) {
             }
 
             if (mouse.y > 535 && !x) {
-                sfMouse_setPosition((sfVector2i) { 1300, 800 }, wp);
-
+                sfMouse_setPosition((sfVector2i){1300,800}, (const sfWindow*)window);
 
                 x = true;
             }
@@ -1350,8 +1349,7 @@ int profilo(sfRenderWindow* window, sfEvent event, sfRenderWindow* wimp) {
         }
 
             if (mouse.y > 535 && !x1) {
-                sfMouse_setPosition((sfVector2i) { 1300, 800 }, wp);
-
+                sfMouse_setPosition((sfVector2i){1300,800}, (const sfWindow*)wp);
 
                 x1 = true;
             }
@@ -1439,8 +1437,7 @@ int profilo(sfRenderWindow* window, sfEvent event, sfRenderWindow* wimp) {
         }
 
         if (mouse.y > 535 && !x2) {
-            sfMouse_setPosition((sfVector2i) { 1300, 800 }, wp);
-
+            sfMouse_setPosition((sfVector2i){1123,525}, (const sfWindow*)wp);
 
             x2 = true;
         }
@@ -1517,8 +1514,7 @@ int profilo(sfRenderWindow* window, sfEvent event, sfRenderWindow* wimp) {
         }
 
         if (mouse.y > 535 && !x3) {
-            sfMouse_setPosition((sfVector2i) { 1300, 800 }, wp);
-
+            sfMouse_setPosition((sfVector2i){1300,800}, (const sfWindow*)wp);
 
             x3 = true;
         }
@@ -1596,7 +1592,7 @@ int profilo(sfRenderWindow* window, sfEvent event, sfRenderWindow* wimp) {
         }
 
         if (mouse.y > 535 && !x4) {
-            sfMouse_setPosition((sfVector2i) { 1300, 800 }, wp);
+            sfMouse_setPosition((sfVector2i){1123,525}, (const sfWindow*)wp);
 
 
             x4 = true;
@@ -2231,7 +2227,8 @@ int impostazioni(sfRenderWindow* window, sfEvent event, sfRenderWindow* wp) {
 
 
 
-    sfMouse_setPosition((sfVector2i) { 1021, 174 }, wimp);
+    
+    sfMouse_setPosition((sfVector2i){1021,174}, (const sfWindow*)wimp);
 
     // Ciclo principale
     while (sfRenderWindow_isOpen(wimp)) {

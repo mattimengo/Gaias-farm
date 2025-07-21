@@ -1,8 +1,0 @@
-﻿  main2.cpp
-C:\Users\matti\Desktop\Esame\main2.cpp(386,41): warning C4244: 'argomento': conversione da 'unsigned __int64' a 'float'. Possibile perdita di dati.
-  Generazione codice in corso...
-  1 of 169 functions ( 0.6%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    5 functions had inline decision re-evaluated but remain unchanged
-  Generazione codice terminata
-  Game.vcxproj -> C:\Users\matti\Desktop\Esame\build\x64\Release\Esame.exe

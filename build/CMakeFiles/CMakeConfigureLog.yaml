@@ -71,7 +71,7 @@ events:
       The output was:
       0
       Versione di MSBuild 17.14.10+8b8e13593 per .NET Framework
-      Compilazione avviata 7/21/2025 12:55:35 PM.
+      Compilazione avviata 7/21/2025 3:59:46 PM.
       
       Progetto "C:\\Users\\matti\\Desktop\\Esame\\build\\CMakeFiles\\4.1.0-rc1\\CompilerIdC\\CompilerIdC.vcxproj" sul nodo 1 (destinazioni predefinite).
       PrepareForBuild:
@@ -100,7 +100,7 @@ events:
           Avvisi: 0
           Errori: 0
       
-      Tempo trascorso 00:00:02.70
+      Tempo trascorso 00:00:01.60
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -631,7 +631,7 @@ events:
       The output was:
       0
       Versione di MSBuild 17.14.10+8b8e13593 per .NET Framework
-      Compilazione avviata 7/21/2025 12:55:38 PM.
+      Compilazione avviata 7/21/2025 3:59:48 PM.
       
       Progetto "C:\\Users\\matti\\Desktop\\Esame\\build\\CMakeFiles\\4.1.0-rc1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" sul nodo 1 (destinazioni predefinite).
       PrepareForBuild:
@@ -660,7 +660,7 @@ events:
           Avvisi: 0
           Errori: 0
       
-      Tempo trascorso 00:00:01.63
+      Tempo trascorso 00:00:01.58
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -990,50 +990,50 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/matti/Desktop/Esame/build/CMakeFiles/CMakeScratch/TryCompile-2s4i8i"
-      binary: "C:/Users/matti/Desktop/Esame/build/CMakeFiles/CMakeScratch/TryCompile-2s4i8i"
+      source: "C:/Users/matti/Desktop/Esame/build/CMakeFiles/CMakeScratch/TryCompile-0qvvg8"
+      binary: "C:/Users/matti/Desktop/Esame/build/CMakeFiles/CMakeScratch/TryCompile-0qvvg8"
     cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
-      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
     buildResult:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/matti/Desktop/Esame/build/CMakeFiles/CMakeScratch/TryCompile-2s4i8i'
+        Change Dir: 'C:/Users/matti/Desktop/Esame/build/CMakeFiles/CMakeScratch/TryCompile-0qvvg8'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c7743.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_086f8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Versione di MSBuild 17.14.10+8b8e13593 per .NET Framework
-        Compilazione avviata 7/21/2025 12:55:44 PM.
+        Compilazione avviata 7/21/2025 3:59:50 PM.
         
-        Progetto "C:\\Users\\matti\\Desktop\\Esame\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2s4i8i\\cmTC_c7743.vcxproj" sul nodo 1 (destinazioni predefinite).
+        Progetto "C:\\Users\\matti\\Desktop\\Esame\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0qvvg8\\cmTC_086f8.vcxproj" sul nodo 1 (destinazioni predefinite).
         PrepareForBuild:
-          Creazione directory "cmTC_c7743.dir\\Debug\\".
+          Creazione directory "cmTC_086f8.dir\\Debug\\".
           L'output strutturato ├¿ abilitato. La formattazione della diagnostica del compilatore rifletter├á la gerarchia degli errori. Per altri dettagli, vedere https://aka.ms/cpp/structured-output.
-          Creazione directory "C:\\Users\\matti\\Desktop\\Esame\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2s4i8i\\Debug\\".
-          Creazione directory "cmTC_c7743.dir\\Debug\\cmTC_c7743.tlog\\".
+          Creazione directory "C:\\Users\\matti\\Desktop\\Esame\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0qvvg8\\Debug\\".
+          Creazione directory "cmTC_086f8.dir\\Debug\\cmTC_086f8.tlog\\".
         InitializeBuildStatus:
-          Creazione di "cmTC_c7743.dir\\Debug\\cmTC_c7743.tlog\\unsuccessfulbuild". ├ê stato specificato "AlwaysCreate".
-          Aggiornamento timestamp di "cmTC_c7743.dir\\Debug\\cmTC_c7743.tlog\\unsuccessfulbuild".
+          Creazione di "cmTC_086f8.dir\\Debug\\cmTC_086f8.tlog\\unsuccessfulbuild". ├ê stato specificato "AlwaysCreate".
+          Aggiornamento timestamp di "cmTC_086f8.dir\\Debug\\cmTC_086f8.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_c7743.dir\\Debug\\\\" /Fd"cmTC_c7743.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_086f8.dir\\Debug\\\\" /Fd"cmTC_086f8.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler versione 19.44.35211 per x64
           Copyright (C) Microsoft Corporation. Tutti i diritti  sono riservati.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_c7743.dir\\Debug\\\\" /Fd"cmTC_c7743.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_086f8.dir\\Debug\\\\" /Fd"cmTC_086f8.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\matti\\Desktop\\Esame\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2s4i8i\\Debug\\cmTC_c7743.exe" /INCREMENTAL /ILK:"cmTC_c7743.dir\\Debug\\cmTC_c7743.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/matti/Desktop/Esame/build/CMakeFiles/CMakeScratch/TryCompile-2s4i8i/Debug/cmTC_c7743.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/matti/Desktop/Esame/build/CMakeFiles/CMakeScratch/TryCompile-2s4i8i/Debug/cmTC_c7743.lib" /MACHINE:X64  /machine:x64 cmTC_c7743.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_c7743.vcxproj -> C:\\Users\\matti\\Desktop\\Esame\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2s4i8i\\Debug\\cmTC_c7743.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\matti\\Desktop\\Esame\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0qvvg8\\Debug\\cmTC_086f8.exe" /INCREMENTAL /ILK:"cmTC_086f8.dir\\Debug\\cmTC_086f8.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/matti/Desktop/Esame/build/CMakeFiles/CMakeScratch/TryCompile-0qvvg8/Debug/cmTC_086f8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/matti/Desktop/Esame/build/CMakeFiles/CMakeScratch/TryCompile-0qvvg8/Debug/cmTC_086f8.lib" /MACHINE:X64  /machine:x64 cmTC_086f8.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_086f8.vcxproj -> C:\\Users\\matti\\Desktop\\Esame\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0qvvg8\\Debug\\cmTC_086f8.exe
         FinalizeBuildStatus:
-          Eliminazione del file "cmTC_c7743.dir\\Debug\\cmTC_c7743.tlog\\unsuccessfulbuild" in corso.
-          Aggiornamento timestamp di "cmTC_c7743.dir\\Debug\\cmTC_c7743.tlog\\cmTC_c7743.lastbuildstate".
-        Compilazione progetto "C:\\Users\\matti\\Desktop\\Esame\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2s4i8i\\cmTC_c7743.vcxproj" (destinazioni predefinite) completata.
+          Eliminazione del file "cmTC_086f8.dir\\Debug\\cmTC_086f8.tlog\\unsuccessfulbuild" in corso.
+          Aggiornamento timestamp di "cmTC_086f8.dir\\Debug\\cmTC_086f8.tlog\\cmTC_086f8.lastbuildstate".
+        Compilazione progetto "C:\\Users\\matti\\Desktop\\Esame\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0qvvg8\\cmTC_086f8.vcxproj" (destinazioni predefinite) completata.
         
         Compilazione completata.
             Avvisi: 0
             Errori: 0
         
-        Tempo trascorso 00:00:01.86
+        Tempo trascorso 00:00:01.54
         
       exitCode: 0
   -
@@ -1073,51 +1073,51 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/matti/Desktop/Esame/build/CMakeFiles/CMakeScratch/TryCompile-hr6i5z"
-      binary: "C:/Users/matti/Desktop/Esame/build/CMakeFiles/CMakeScratch/TryCompile-hr6i5z"
+      source: "C:/Users/matti/Desktop/Esame/build/CMakeFiles/CMakeScratch/TryCompile-vmd4xw"
+      binary: "C:/Users/matti/Desktop/Esame/build/CMakeFiles/CMakeScratch/TryCompile-vmd4xw"
     cmakeVariables:
-      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
-      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
     buildResult:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/matti/Desktop/Esame/build/CMakeFiles/CMakeScratch/TryCompile-hr6i5z'
+        Change Dir: 'C:/Users/matti/Desktop/Esame/build/CMakeFiles/CMakeScratch/TryCompile-vmd4xw'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ccfbf.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_04b16.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Versione di MSBuild 17.14.10+8b8e13593 per .NET Framework
-        Compilazione avviata 7/21/2025 12:55:47 PM.
+        Compilazione avviata 7/21/2025 3:59:53 PM.
         
-        Progetto "C:\\Users\\matti\\Desktop\\Esame\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hr6i5z\\cmTC_ccfbf.vcxproj" sul nodo 1 (destinazioni predefinite).
+        Progetto "C:\\Users\\matti\\Desktop\\Esame\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vmd4xw\\cmTC_04b16.vcxproj" sul nodo 1 (destinazioni predefinite).
         PrepareForBuild:
-          Creazione directory "cmTC_ccfbf.dir\\Debug\\".
+          Creazione directory "cmTC_04b16.dir\\Debug\\".
           L'output strutturato ├¿ abilitato. La formattazione della diagnostica del compilatore rifletter├á la gerarchia degli errori. Per altri dettagli, vedere https://aka.ms/cpp/structured-output.
-          Creazione directory "C:\\Users\\matti\\Desktop\\Esame\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hr6i5z\\Debug\\".
-          Creazione directory "cmTC_ccfbf.dir\\Debug\\cmTC_ccfbf.tlog\\".
+          Creazione directory "C:\\Users\\matti\\Desktop\\Esame\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vmd4xw\\Debug\\".
+          Creazione directory "cmTC_04b16.dir\\Debug\\cmTC_04b16.tlog\\".
         InitializeBuildStatus:
-          Creazione di "cmTC_ccfbf.dir\\Debug\\cmTC_ccfbf.tlog\\unsuccessfulbuild". ├ê stato specificato "AlwaysCreate".
-          Aggiornamento timestamp di "cmTC_ccfbf.dir\\Debug\\cmTC_ccfbf.tlog\\unsuccessfulbuild".
+          Creazione di "cmTC_04b16.dir\\Debug\\cmTC_04b16.tlog\\unsuccessfulbuild". ├ê stato specificato "AlwaysCreate".
+          Aggiornamento timestamp di "cmTC_04b16.dir\\Debug\\cmTC_04b16.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_ccfbf.dir\\Debug\\\\" /Fd"cmTC_ccfbf.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_04b16.dir\\Debug\\\\" /Fd"cmTC_04b16.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler versione 19.44.35211 per x64
           Copyright (C) Microsoft Corporation. Tutti i diritti  sono riservati.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_ccfbf.dir\\Debug\\\\" /Fd"cmTC_ccfbf.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_04b16.dir\\Debug\\\\" /Fd"cmTC_04b16.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\matti\\Desktop\\Esame\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hr6i5z\\Debug\\cmTC_ccfbf.exe" /INCREMENTAL /ILK:"cmTC_ccfbf.dir\\Debug\\cmTC_ccfbf.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/matti/Desktop/Esame/build/CMakeFiles/CMakeScratch/TryCompile-hr6i5z/Debug/cmTC_ccfbf.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/matti/Desktop/Esame/build/CMakeFiles/CMakeScratch/TryCompile-hr6i5z/Debug/cmTC_ccfbf.lib" /MACHINE:X64  /machine:x64 cmTC_ccfbf.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_ccfbf.vcxproj -> C:\\Users\\matti\\Desktop\\Esame\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hr6i5z\\Debug\\cmTC_ccfbf.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\matti\\Desktop\\Esame\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vmd4xw\\Debug\\cmTC_04b16.exe" /INCREMENTAL /ILK:"cmTC_04b16.dir\\Debug\\cmTC_04b16.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/matti/Desktop/Esame/build/CMakeFiles/CMakeScratch/TryCompile-vmd4xw/Debug/cmTC_04b16.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/matti/Desktop/Esame/build/CMakeFiles/CMakeScratch/TryCompile-vmd4xw/Debug/cmTC_04b16.lib" /MACHINE:X64  /machine:x64 cmTC_04b16.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_04b16.vcxproj -> C:\\Users\\matti\\Desktop\\Esame\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vmd4xw\\Debug\\cmTC_04b16.exe
         FinalizeBuildStatus:
-          Eliminazione del file "cmTC_ccfbf.dir\\Debug\\cmTC_ccfbf.tlog\\unsuccessfulbuild" in corso.
-          Aggiornamento timestamp di "cmTC_ccfbf.dir\\Debug\\cmTC_ccfbf.tlog\\cmTC_ccfbf.lastbuildstate".
-        Compilazione progetto "C:\\Users\\matti\\Desktop\\Esame\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hr6i5z\\cmTC_ccfbf.vcxproj" (destinazioni predefinite) completata.
+          Eliminazione del file "cmTC_04b16.dir\\Debug\\cmTC_04b16.tlog\\unsuccessfulbuild" in corso.
+          Aggiornamento timestamp di "cmTC_04b16.dir\\Debug\\cmTC_04b16.tlog\\cmTC_04b16.lastbuildstate".
+        Compilazione progetto "C:\\Users\\matti\\Desktop\\Esame\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vmd4xw\\cmTC_04b16.vcxproj" (destinazioni predefinite) completata.
         
         Compilazione completata.
             Avvisi: 0
             Errori: 0
         
-        Tempo trascorso 00:00:01.94
+        Tempo trascorso 00:00:01.54
         
       exitCode: 0
   -
@@ -1149,257 +1149,10 @@ events:
       Microsoft (R) Incremental Linker Version 14.44.35211.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
   -
-    kind: "find_package-v1"
-    backtrace:
-      - "CMakeLists.txt:8 (find_package)"
-    name: "SFML"
-    components:
-      -
-        name: "system"
-        required: true
-        found: false
-      -
-        name: "window"
-        required: true
-        found: false
-      -
-        name: "graphics"
-        required: true
-        found: false
-      -
-        name: "audio"
-        required: true
-        found: false
-    configs:
-      -
-        filename: "SFMLConfig.cmake"
-        kind: "cmake"
-      -
-        filename: "sfml-config.cmake"
-        kind: "cmake"
-    version_request:
-      version: "2.5"
-      version_complete: "2.5"
-      exact: false
-    settings:
-      required: "required_explicit"
-      quiet: false
-      global: false
-      policy_scope: true
-      bypass_provider: false
-      names:
-        - "SFML"
-      path_suffixes:
-        - ""
-      paths:
-        CMAKE_FIND_USE_CMAKE_PATH: true
-        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-        CMAKE_FIND_USE_INSTALL_PREFIX: true
-        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
-        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
-        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
-        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
-    candidates:
-      -
-        path: "C:/Users/matti/Desktop/Esame/build/CMakeFiles/pkgRedirects/SFMLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/matti/Desktop/Esame/build/CMakeFiles/pkgRedirects/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Eclipse Adoptium/jre-17.0.8.101-hotspot/SFMLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Eclipse Adoptium/jre-17.0.8.101-hotspot/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Common Files/Oracle/Java/javapath/SFMLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Common Files/Oracle/Java/javapath/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/SFMLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/SFMLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Git/cmd/SFMLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Git/cmd/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Git LFS/SFMLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Git LFS/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/SFMLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/dotnet/SFMLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/dotnet/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/CMake/SFMLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/CMake/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/matti/AppData/Local/Programs/Python/Launcher/SFMLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/matti/AppData/Local/Programs/Python/Launcher/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/matti/AppData/Local/Microsoft/WindowsApps/SFMLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/matti/AppData/Local/Microsoft/WindowsApps/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/matti/AppData/Local/Programs/Microsoft VS Code/SFMLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/matti/AppData/Local/Programs/Microsoft VS Code/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/MinGW/SFMLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/MinGW/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/JetBrains/CLion 2024.2.2/SFMLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/JetBrains/CLion 2024.2.2/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/matti/AppData/Local/Muse Hub/lib/SFMLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/matti/AppData/Local/Muse Hub/lib/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/matti/AppData/Local/GitHubDesktop/SFMLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/matti/AppData/Local/GitHubDesktop/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/SFMLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/CMake/SFMLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/CMake/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/SFMLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/sfml-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-    found: null
-    search_context:
-      ENV{PATH}:
-        - "C:\\Program Files\\Eclipse Adoptium\\jre-17.0.8.101-hotspot\\bin"
-        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
-        - "\"C:\\Program Files (x86)\\Java\\jre1.8.0_421\\bin\\javaw.exe\""
-        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
-        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\Program Files\\Git LFS"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\matti\\AppData\\Local\\Programs\\Python\\Launcher\\"
-        - "C:\\Users\\matti\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\matti\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\MinGW\\bin"
-        - "C:\\Program Files\\JetBrains\\CLion 2024.2.2\\bin"
-        - "C:\\Users\\matti\\AppData\\Local\\Muse Hub\\lib"
-        - "C:\\msys64\\ucrt64\\bin"
-        - "C:\\sdl2\\bin"
-        - "C:\\Users\\matti\\AppData\\Local\\GitHubDesktop\\bin"
-        - "C:\\Users\\matti\\.dotnet\\tools"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Esame"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/Program Files"
-        - "C:/Program Files (x86)"
-        - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/Esame"
-...
-
----
-events:
-  -
     kind: "find-v1"
     backtrace:
       - "C:/Users/matti/Desktop/Gioco C/SFML-2.6.2/lib/cmake/SFML/SFMLConfig.cmake:79 (find_path)"
-      - "CMakeLists.txt:8 (find_package)"
+      - "CMakeLists.txt:19 (find_package)"
     mode: "path"
     variable: "SFML_DOC_DIR"
     description: "Path to a file."

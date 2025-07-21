@@ -4,6 +4,9 @@
     <ClCompile Include="C:\Users\matti\Desktop\Esame\avatar.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\matti\Desktop\Esame\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\matti\Desktop\Esame\main2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

@@ -112,7 +112,7 @@ int main(sfRenderWindow* wp, sfRenderWindow* wimp) {
 
         if_click(window, event, wp, wimp);
 
-
+        return 0;
 
 
     }
@@ -184,6 +184,8 @@ int menu(sfRenderWindow* window, sfEvent event, sfRenderWindow* wp, sfRenderWind
 
     if_click(window, event, wp, wimp);
 
+    return 0;
+
 }
 
 int if_click(sfRenderWindow* window, sfEvent event, sfRenderWindow* wp, sfRenderWindow* wimp) {
@@ -246,6 +248,8 @@ int if_click(sfRenderWindow* window, sfEvent event, sfRenderWindow* wp, sfRender
 
         }
     }
+
+    return 0;
 }
 
 int profilo(sfRenderWindow* window, sfEvent event, sfRenderWindow* wimp) {
@@ -1960,7 +1964,7 @@ int profilo(sfRenderWindow* window, sfEvent event, sfRenderWindow* wimp) {
 
 
 
-
+    return 0;
 
 }
 
@@ -2442,6 +2446,8 @@ int impostazioni(sfRenderWindow* window, sfEvent event, sfRenderWindow* wp) {
 
     avvia(window, wimp, wimp);
 
+    return 0;
+
 }
 
 //distugge la render window -> collegamento con l'inizio del gioco -> introduzione
@@ -2655,6 +2661,7 @@ int avvia(sfRenderWindow* window, sfRenderWindow* wimp, sfRenderWindow* wp) {
 
         
     }
+    return 0;
 
 }
 

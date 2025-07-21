@@ -4,33 +4,27 @@ project(Esame)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# File sorgenti
 set(SOURCES
     main.cpp
     avatar.cpp
     avatar.h
 )
 
-# Aggiungi eseguibile
 add_executable(${PROJECT_NAME} ${SOURCES})
 
-# Include SFML
+# Configura SFML (modifica il percorso se necessario)
 set(SFML_DIR "C:/Users/matti/Desktop/Gioco C/SFML-2.6.2/lib/cmake/SFML")
 find_package(SFML 2.6 COMPONENTS system window graphics audio REQUIRED)
 
-target_include_directories(${PROJECT_NAME} PRIVATE
-    "C:/Users/matti/Desktop/Gioco C/SFML-2.6.2/include"
+if(NOT SFML_FOUND)
+    message(FATAL_ERROR "SFML non trovato! Verifica il percorso.")
+endif()
+
+target_link_libraries(${PROJECT_NAME} PRIVATE 
+    sfml-graphics sfml-window sfml-system sfml-audio
 )
 
-# Collega le librerie in base al tipo di build
-target_link_libraries(${PROJECT_NAME}
-    debug sfml-graphics-d optimized sfml-graphics
-    debug sfml-window-d   optimized sfml-window
-    debug sfml-system-d   optimized sfml-system
-    debug sfml-audio-d    optimized sfml-audio
-)
-
-# Visual Studio console
-if (MSVC)
+# Solo per Visual Studio
+if(MSVC)
     set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /SUBSYSTEM:CONSOLE")
 endif()

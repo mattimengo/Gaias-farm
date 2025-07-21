@@ -17,19 +17,18 @@ find_package(SFML 2.6.2 COMPONENTS system window graphics audio REQUIRED)
 # Includi header SFML e CSFML
 include_directories(
     "C:/Users/matti/Desktop/Gioco C/SFML-2.6.2/include"
-    "C:/Users/matti/Desktop/Gioco C/CSFML/include"
-    ${CMAKE_CURRENT_SOURCE_DIR}
+     ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
 # Aggiungi directory librerie SFML e CSFML
 link_directories(
     "C:/Users/matti/Desktop/Gioco C/SFML-2.6.2/lib"
-    "C:/Users/matti/Desktop/Gioco C/CSFML/lib/msvc"
+    
 )
 
 # File sorgenti
 set(SOURCES
-    main.c
+   
     main2.cpp
     avatar.cpp
     avatar.h
@@ -38,16 +37,12 @@ set(SOURCES
 # Crea eseguibile
 add_executable(Esame ${SOURCES})
 
-# Linka librerie SFML e CSFML
-target_link_libraries(Esame
+# Linka librerie SFML target_link_libraries
+(Esame
     sfml-system-d
     sfml-window-d
     sfml-graphics-d
     sfml-audio-d
-    csfml-system
-    csfml-window
-    csfml-graphics
-    csfml-audio
 )
 
 # Configurazione aggiuntiva per MSVC (pausa console)

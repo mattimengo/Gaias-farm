@@ -105,7 +105,8 @@ int main(sfRenderWindow* wp, sfRenderWindow* wimp) {
 
 
         //comandi
-        sfVector2i mouse = sfVector2i mouse = sfMouse_getPositionRenderWindow(window);
+        sfVector2i mouse = sfMouse_getPosition(window);
+
         printf("position = (%d;%d)\n", mouse.x, mouse.y);
 
 

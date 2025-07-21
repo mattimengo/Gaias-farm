@@ -204,13 +204,13 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-Esame_BINARY_DIR:STATIC=C:/Users/matti/Desktop/Esame/build/TEST
+Esame_BINARY_DIR:STATIC=C:/Users/matti/Desktop/Esame/build
 
 //Value Computed by CMake
-Esame_IS_TOP_LEVEL:STATIC=OFF
+Esame_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-Esame_SOURCE_DIR:STATIC=C:/Users/matti/Desktop/Esame/TEST
+Esame_SOURCE_DIR:STATIC=C:/Users/matti/Desktop/Esame
 
 //No help, variable specified on the command line.
 SFML_DIR:UNINITIALIZED=C:/Users/matti/Desktop/Gioco C/SFML-2.6.2/lib/cmake/SFML
@@ -305,7 +305,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MT
 CMAKE_MT-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //noop for ranlib

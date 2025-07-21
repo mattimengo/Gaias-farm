@@ -10,8 +10,6 @@ find_package(SFML 2.5 COMPONENTS system window graphics audio REQUIRED)
 set(SFML_DIR "C:/Users/matti/Desktop/Gioco C/SFML-2.6.2/lib/cmake/SFML")
 
 
-# Aggiungi la subdirectory TEST
-add_subdirectory(TEST)
 
 # Specifica i file sorgenti principali (fuori dalla subdirectory TEST)
 set(SOURCES

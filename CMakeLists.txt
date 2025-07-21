@@ -21,14 +21,15 @@ set(CSFML_LIBRARY_DIR "C:/Users/matti/Desktop/Gioco C/CSFML/lib/msvc")
 # Includi header SFML e CSFML
 include_directories(
     "C:/Users/matti/Desktop/Gioco C/SFML-2.6.2/include"
-    "C:/Users/matti/Desktop/Gioco C/CSFML/include"
-     ${CMAKE_CURRENT_SOURCE_DIR}
+    ${CSFML_INCLUDE_DIR}
+    ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
 # Aggiungi directory librerie SFML e CSFML
 link_directories(
     "C:/Users/matti/Desktop/Gioco C/SFML-2.6.2/lib"
-    "C:/Users/matti/Desktop/Gioco C/CSFML/lib")
+    "${CSFML_LIBRARY_DIR}"
+)
 
 # File sorgenti
 set(SOURCES

@@ -25,7 +25,8 @@ link_directories("${CSFML_LIBRARY_DIR}")
 set(SOURCES
     main.c
     main2.cpp
-    avatar.cpp)
+    avatar.cpp
+    avatar.h)
 
 # Crea eseguibile
 add_executable(Esame ${SOURCES})

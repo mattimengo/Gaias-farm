@@ -37,13 +37,12 @@ set(SOURCES
 # Crea eseguibile
 add_executable(Esame ${SOURCES})
 
-# Linka librerie SFML target_link_libraries
-(Esame
+# Linka librerie SFML e CSFML
+target_link_libraries(Esame
     sfml-system-d
     sfml-window-d
     sfml-graphics-d
-    sfml-audio-d
-)
+    sfml-audio-d)
 
 # Configurazione aggiuntiva per MSVC (pausa console)
 if(MSVC)

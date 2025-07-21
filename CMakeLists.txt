@@ -1,46 +1,36 @@
 cmake_minimum_required(VERSION 3.14)
 project(Esame)
 
-# Imposta lo standard C++
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-
-
-# Trova SFML
-find_package(SFML 2.6.2 COMPONENTS system window graphics audio REQUIRED)
-
-# Includi header SFML e CSFML
-include_directories(
-    "C:/Users/matti/Desktop/Gioco C/SFML-2.6.2/include"
-     ${CMAKE_CURRENT_SOURCE_DIR}
-)
-
-# Aggiungi directory librerie SFML e CSFML
-link_directories(
-    "C:/Users/matti/Desktop/Gioco C/SFML-2.6.2/lib"
-    
-)
-
 # File sorgenti
 set(SOURCES
-   
     main.cpp
     avatar.cpp
     avatar.h
 )
 
-# Crea eseguibile
-add_executable(Esame ${SOURCES})
+# Aggiungi eseguibile
+add_executable(${PROJECT_NAME} ${SOURCES})
 
-# Linka librerie SFML e CSFML
-target_link_libraries(Esame
-    sfml-system-d
-    sfml-window-d
-    sfml-graphics-d
-    sfml-audio-d)
+# Include SFML
+set(SFML_DIR "C:/Users/matti/Desktop/Gioco C/SFML-2.6.2/lib/cmake/SFML")
+find_package(SFML 2.6 COMPONENTS system window graphics audio REQUIRED)
 
-# Configurazione aggiuntiva per MSVC (pausa console)
-if(MSVC)
+target_include_directories(${PROJECT_NAME} PRIVATE
+    "C:/Users/matti/Desktop/Gioco C/SFML-2.6.2/include"
+)
+
+# Collega le librerie in base al tipo di build
+target_link_libraries(${PROJECT_NAME}
+    debug sfml-graphics-d optimized sfml-graphics
+    debug sfml-window-d   optimized sfml-window
+    debug sfml-system-d   optimized sfml-system
+    debug sfml-audio-d    optimized sfml-audio
+)
+
+# Visual Studio console
+if (MSVC)
     set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /SUBSYSTEM:CONSOLE")
 endif()

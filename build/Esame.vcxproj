@@ -59,25 +59,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\matti\Desktop\Esame\build\build\x64\Release\Debug\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\matti\Desktop\Esame\build\build\x64\Release\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Esame.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Esame</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\matti\Desktop\Esame\build\build\x64\Release\Debug\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\matti\Desktop\Esame\build\build\x64\Release\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Esame.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Esame</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\matti\Desktop\Esame\build\build\x64\Release\Debug\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\matti\Desktop\Esame\build\build\x64\Release\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Esame.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Esame</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\matti\Desktop\Esame\build\build\x64\Release\Debug\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\matti\Desktop\Esame\build\build\x64\Release\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Esame.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Esame</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
@@ -86,13 +86,11 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\matti\Desktop\Gioco C\CSFML\include;C:\Users\matti\Desktop\Esame;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/matti/Desktop/Gioco C/SFML-2.6.2/include"</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Users\matti\Desktop\Gioco C\SFML-2.6.2\include;C:\Users\matti\Desktop\Gioco C\CSFML\include;C:\Users\matti\Desktop\Esame;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <LanguageStandard>stdcpp17</LanguageStandard>
@@ -111,10 +109,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\matti\Desktop\Gioco C\CSFML\include;C:\Users\matti\Desktop\Esame;C:\Users\matti\Desktop\Gioco C\SFML-2.6.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\matti\Desktop\Gioco C\SFML-2.6.2\include;C:\Users\matti\Desktop\Gioco C\CSFML\include;C:\Users\matti\Desktop\Esame;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\matti\Desktop\Gioco C\CSFML\include;C:\Users\matti\Desktop\Esame;C:\Users\matti\Desktop\Gioco C\SFML-2.6.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\matti\Desktop\Gioco C\SFML-2.6.2\include;C:\Users\matti\Desktop\Gioco C\CSFML\include;C:\Users\matti\Desktop\Esame;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -122,8 +120,8 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>C:\Users\matti\Desktop\Gioco C\SFML-2.6.2\lib\sfml-graphics-d.lib;C:\Users\matti\Desktop\Gioco C\SFML-2.6.2\lib\sfml-audio-d.lib;csfml-system.lib;csfml-window.lib;csfml-graphics.lib;csfml-audio.lib;C:\Users\matti\Desktop\Gioco C\SFML-2.6.2\lib\sfml-window-d.lib;C:\Users\matti\Desktop\Gioco C\SFML-2.6.2\lib\sfml-system-d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:/Users/matti/Desktop/Gioco C/CSFML/lib/msvc;C:/Users/matti/Desktop/Gioco C/CSFML/lib/msvc/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-system-d.lib;sfml-window-d.lib;sfml-graphics-d.lib;sfml-audio-d.lib;csfml-system.lib;csfml-window.lib;csfml-graphics.lib;csfml-audio.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/matti/Desktop/Gioco C/SFML-2.6.2/lib;C:/Users/matti/Desktop/Gioco C/SFML-2.6.2/lib/$(Configuration);C:/Users/matti/Desktop/Gioco C/CSFML/lib/msvc;C:/Users/matti/Desktop/Gioco C/CSFML/lib/msvc/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -131,7 +129,7 @@
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
       <ImportLibrary>C:/Users/matti/Desktop/Esame/build/Debug/Esame.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Users/matti/Desktop/Esame/build/build/x64/Release/Debug/Debug/Esame.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Users/matti/Desktop/Esame/build/build/x64/Release/Debug/Esame.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -141,12 +139,10 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\matti\Desktop\Gioco C\CSFML\include;C:\Users\matti\Desktop\Esame;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/matti/Desktop/Gioco C/SFML-2.6.2/include"</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Users\matti\Desktop\Gioco C\SFML-2.6.2\include;C:\Users\matti\Desktop\Gioco C\CSFML\include;C:\Users\matti\Desktop\Esame;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <LanguageStandard>stdcpp17</LanguageStandard>
@@ -167,10 +163,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\matti\Desktop\Gioco C\CSFML\include;C:\Users\matti\Desktop\Esame;C:\Users\matti\Desktop\Gioco C\SFML-2.6.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\matti\Desktop\Gioco C\SFML-2.6.2\include;C:\Users\matti\Desktop\Gioco C\CSFML\include;C:\Users\matti\Desktop\Esame;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\matti\Desktop\Gioco C\CSFML\include;C:\Users\matti\Desktop\Esame;C:\Users\matti\Desktop\Gioco C\SFML-2.6.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\matti\Desktop\Gioco C\SFML-2.6.2\include;C:\Users\matti\Desktop\Gioco C\CSFML\include;C:\Users\matti\Desktop\Esame;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -178,8 +174,8 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>C:\Users\matti\Desktop\Gioco C\SFML-2.6.2\lib\sfml-graphics.lib;C:\Users\matti\Desktop\Gioco C\SFML-2.6.2\lib\sfml-audio.lib;csfml-system.lib;csfml-window.lib;csfml-graphics.lib;csfml-audio.lib;C:\Users\matti\Desktop\Gioco C\SFML-2.6.2\lib\sfml-window.lib;C:\Users\matti\Desktop\Gioco C\SFML-2.6.2\lib\sfml-system.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:/Users/matti/Desktop/Gioco C/CSFML/lib/msvc;C:/Users/matti/Desktop/Gioco C/CSFML/lib/msvc/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-system-d.lib;sfml-window-d.lib;sfml-graphics-d.lib;sfml-audio-d.lib;csfml-system.lib;csfml-window.lib;csfml-graphics.lib;csfml-audio.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/matti/Desktop/Gioco C/SFML-2.6.2/lib;C:/Users/matti/Desktop/Gioco C/SFML-2.6.2/lib/$(Configuration);C:/Users/matti/Desktop/Gioco C/CSFML/lib/msvc;C:/Users/matti/Desktop/Gioco C/CSFML/lib/msvc/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
       <GenerateDebugInformation>false</GenerateDebugInformation>
@@ -187,7 +183,7 @@
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
       <ImportLibrary>C:/Users/matti/Desktop/Esame/build/Release/Esame.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Users/matti/Desktop/Esame/build/build/x64/Release/Debug/Release/Esame.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Users/matti/Desktop/Esame/build/build/x64/Release/Release/Esame.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -197,12 +193,10 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\matti\Desktop\Gioco C\CSFML\include;C:\Users\matti\Desktop\Esame;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/matti/Desktop/Gioco C/SFML-2.6.2/include"</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Users\matti\Desktop\Gioco C\SFML-2.6.2\include;C:\Users\matti\Desktop\Gioco C\CSFML\include;C:\Users\matti\Desktop\Esame;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <LanguageStandard>stdcpp17</LanguageStandard>
@@ -223,10 +217,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\matti\Desktop\Gioco C\CSFML\include;C:\Users\matti\Desktop\Esame;C:\Users\matti\Desktop\Gioco C\SFML-2.6.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\matti\Desktop\Gioco C\SFML-2.6.2\include;C:\Users\matti\Desktop\Gioco C\CSFML\include;C:\Users\matti\Desktop\Esame;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\matti\Desktop\Gioco C\CSFML\include;C:\Users\matti\Desktop\Esame;C:\Users\matti\Desktop\Gioco C\SFML-2.6.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\matti\Desktop\Gioco C\SFML-2.6.2\include;C:\Users\matti\Desktop\Gioco C\CSFML\include;C:\Users\matti\Desktop\Esame;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -234,8 +228,8 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>C:\Users\matti\Desktop\Gioco C\SFML-2.6.2\lib\sfml-graphics-d.lib;C:\Users\matti\Desktop\Gioco C\SFML-2.6.2\lib\sfml-audio-d.lib;csfml-system.lib;csfml-window.lib;csfml-graphics.lib;csfml-audio.lib;C:\Users\matti\Desktop\Gioco C\SFML-2.6.2\lib\sfml-window-d.lib;C:\Users\matti\Desktop\Gioco C\SFML-2.6.2\lib\sfml-system-d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:/Users/matti/Desktop/Gioco C/CSFML/lib/msvc;C:/Users/matti/Desktop/Gioco C/CSFML/lib/msvc/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-system-d.lib;sfml-window-d.lib;sfml-graphics-d.lib;sfml-audio-d.lib;csfml-system.lib;csfml-window.lib;csfml-graphics.lib;csfml-audio.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/matti/Desktop/Gioco C/SFML-2.6.2/lib;C:/Users/matti/Desktop/Gioco C/SFML-2.6.2/lib/$(Configuration);C:/Users/matti/Desktop/Gioco C/CSFML/lib/msvc;C:/Users/matti/Desktop/Gioco C/CSFML/lib/msvc/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
       <GenerateDebugInformation>false</GenerateDebugInformation>
@@ -243,7 +237,7 @@
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
       <ImportLibrary>C:/Users/matti/Desktop/Esame/build/MinSizeRel/Esame.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Users/matti/Desktop/Esame/build/build/x64/Release/Debug/MinSizeRel/Esame.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Users/matti/Desktop/Esame/build/build/x64/Release/MinSizeRel/Esame.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -253,13 +247,11 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\matti\Desktop\Gioco C\CSFML\include;C:\Users\matti\Desktop\Esame;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/matti/Desktop/Gioco C/SFML-2.6.2/include"</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Users\matti\Desktop\Gioco C\SFML-2.6.2\include;C:\Users\matti\Desktop\Gioco C\CSFML\include;C:\Users\matti\Desktop\Esame;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <LanguageStandard>stdcpp17</LanguageStandard>
@@ -278,10 +270,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\matti\Desktop\Gioco C\CSFML\include;C:\Users\matti\Desktop\Esame;C:\Users\matti\Desktop\Gioco C\SFML-2.6.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\matti\Desktop\Gioco C\SFML-2.6.2\include;C:\Users\matti\Desktop\Gioco C\CSFML\include;C:\Users\matti\Desktop\Esame;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\matti\Desktop\Gioco C\CSFML\include;C:\Users\matti\Desktop\Esame;C:\Users\matti\Desktop\Gioco C\SFML-2.6.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\matti\Desktop\Gioco C\SFML-2.6.2\include;C:\Users\matti\Desktop\Gioco C\CSFML\include;C:\Users\matti\Desktop\Esame;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -289,8 +281,8 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>C:\Users\matti\Desktop\Gioco C\SFML-2.6.2\lib\sfml-graphics-d.lib;C:\Users\matti\Desktop\Gioco C\SFML-2.6.2\lib\sfml-audio-d.lib;csfml-system.lib;csfml-window.lib;csfml-graphics.lib;csfml-audio.lib;C:\Users\matti\Desktop\Gioco C\SFML-2.6.2\lib\sfml-window-d.lib;C:\Users\matti\Desktop\Gioco C\SFML-2.6.2\lib\sfml-system-d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:/Users/matti/Desktop/Gioco C/CSFML/lib/msvc;C:/Users/matti/Desktop/Gioco C/CSFML/lib/msvc/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-system-d.lib;sfml-window-d.lib;sfml-graphics-d.lib;sfml-audio-d.lib;csfml-system.lib;csfml-window.lib;csfml-graphics.lib;csfml-audio.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/matti/Desktop/Gioco C/SFML-2.6.2/lib;C:/Users/matti/Desktop/Gioco C/SFML-2.6.2/lib/$(Configuration);C:/Users/matti/Desktop/Gioco C/CSFML/lib/msvc;C:/Users/matti/Desktop/Gioco C/CSFML/lib/msvc/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <DataExecutionPrevention></DataExecutionPrevention>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -298,7 +290,7 @@
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
       <ImportLibrary>C:/Users/matti/Desktop/Esame/build/RelWithDebInfo/Esame.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Users/matti/Desktop/Esame/build/build/x64/Release/Debug/RelWithDebInfo/Esame.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Users/matti/Desktop/Esame/build/build/x64/Release/RelWithDebInfo/Esame.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>

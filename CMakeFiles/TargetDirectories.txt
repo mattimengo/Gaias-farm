@@ -1,0 +1,3 @@
+C:/Users/matti/Desktop/Esame/CMakeFiles/Esame.dir
+C:/Users/matti/Desktop/Esame/CMakeFiles/ALL_BUILD.dir
+C:/Users/matti/Desktop/Esame/CMakeFiles/ZERO_CHECK.dir

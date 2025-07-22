@@ -7,8 +7,8 @@
   },
   "ExpandedNodes": [
     "",
-    "\\build"
+    "\\build",
+    "\\build\\Release"
   ],
-  "SelectedNode": "\\build\\ALL_BUILD.vcxproj",
   "PreviewInSolutionExplorer": false
 }

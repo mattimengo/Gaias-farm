@@ -250,6 +250,9 @@ Esame_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 Esame_SOURCE_DIR:STATIC=C:/Users/matti/Desktop/Esame
 
+//The directory containing a CMake configuration file for SFML-2.6.2.
+SFML-2.6.2_DIR:PATH=SFML-2.6.2_DIR-NOTFOUND
+
 //The directory containing a CMake configuration file for SFML.
 SFML_DIR:PATH=SFML_DIR-NOTFOUND
 

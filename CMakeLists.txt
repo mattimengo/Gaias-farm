@@ -1,26 +1,56 @@
-cmake_minimum_required(VERSION 3.16)
-
+cmake_minimum_required(VERSION 3.10)
 project(Esame)
 
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
+# Imposta lo standard C++ a 11.
+set(CMAKE_CXX_STANDARD 11)
 
-set(SFML_DIR "C:/Users/matti/Desktop/SFML-2.6.2/lib/cmake/SFML")
-find_package(SFML 2.6 COMPONENTS system window graphics audio REQUIRED)
-
+# --- Definizione dei file sorgente ---
 set(SOURCES
     main.cpp
     avatar.cpp
-    avatar.h
 )
 
+# --- Creazione dell'eseguibile ---
 add_executable(${PROJECT_NAME} ${SOURCES})
 
-target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 
-target_link_libraries(${PROJECT_NAME} PRIVATE sfml-graphics sfml-window sfml-system sfml-audio)
+# Imposta il percorso degli header di SFML (se necessario)
+include_directories(headers)
 
-if(MSVC)
-    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /SUBSYSTEM:CONSOLE")
+set(SFML_DIR "C:/Users/matti/Desktop/SFML-2.6.2/lib/cmake/SFML")
+set(SFML_INCLUDE_DIR "C:/Users/matti/Desktop/SFML-2.6.2/include/SFML")
+set(SFML_BIN_DIR "C:/Users/matti/Desktop/SFML-2.6.2/bin")
+
+# Trova il pacchetto SFML.
+find_package(SFML REQUIRED system window graphics)
+
+# Controlla se SFML è stato trovato con successo e mostra un messaggio.
+if(SFML_FOUND)
+    message(STATUS "SFML trovato con successo. Versione: ${SFML_VERSION}")
+    target_include_directories(Esame PRIVATE ${SFML_INCLUDE_DIR})
+
+    # Linka librerie SFML
+    target_link_libraries(${PROJECT_NAME}
+       sfml-system
+       sfml-window
+       sfml-graphics
+       sfml-audio
+       sfml-network
+)
+
+else()
+    message(FATAL_ERROR "SFML non trovato. Assicurati che SFML_DIR sia impostato correttamente.")
 endif()
+
+
+
+
+
+
+if(WIN32)
+    file(GLOB BINARY_DEP_DLLS "${SFML_INCLUDE_DIR}/../bin/*.dll")
+    file(COPY ${BINARY_DEP_DLLS} DESTINATION ${CMAKE_BINARY_DIR})
+endif()
+
+
 

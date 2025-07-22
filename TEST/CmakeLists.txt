@@ -1,0 +1,38 @@
+cmake_minimum_required(VERSION 3.14)
+project(MovementTestProject)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_BUILD_TYPE Debug)
+
+# GoogleTest
+include(FetchContent)
+FetchContent_Declare(
+    googletest
+    URL https://github.com/google/googletest/archive/refs/tags/release-1.12.1.zip
+)
+set(INSTALL_GTEST OFF)
+set(BUILD_GMOCK ON)
+set(BUILD_GTEST ON)
+FetchContent_MakeAvailable(googletest)
+
+enable_testing()
+
+# Aggiungi la libreria vera, quella da testare (NON il test)
+add_library(movement STATIC
+    imp.cpp
+)
+
+target_include_directories(movement PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+
+# Aggiungi l'eseguibile dei test (che include test_movement.cpp)
+add_executable(tests
+    tests/test_movement.cpp
+)
+
+target_link_libraries(tests
+    movement
+    gtest_main
+)
+
+include(GoogleTest)
+gtest_discover_tests(tests)

@@ -51,7 +51,7 @@ build cmake_object_order_depends_target_Esame: phony || .
 
 build CMakeFiles\Esame.dir\main.cpp.obj: CXX_COMPILER__Esame_unscanned_Debug C$:\Users\matti\Desktop\Esame\main.cpp || cmake_object_order_depends_target_Esame
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -IC:\Users\matti\Desktop\SFML-2.6.2\include\SFML -external:IC:\Users\matti\Desktop\SFML-2.6.2\include -external:W0
+  INCLUDES = -IC:\Users\matti\Desktop\Esame\headers -IC:\Users\matti\Desktop\SFML-2.6.2\include\SFML -external:IC:\Users\matti\Desktop\SFML-2.6.2\include -external:W0
   OBJECT_DIR = CMakeFiles\Esame.dir
   OBJECT_FILE_DIR = CMakeFiles\Esame.dir
   TARGET_COMPILE_PDB = CMakeFiles\Esame.dir\
@@ -59,7 +59,7 @@ build CMakeFiles\Esame.dir\main.cpp.obj: CXX_COMPILER__Esame_unscanned_Debug C$:
 
 build CMakeFiles\Esame.dir\avatar.cpp.obj: CXX_COMPILER__Esame_unscanned_Debug C$:\Users\matti\Desktop\Esame\avatar.cpp || cmake_object_order_depends_target_Esame
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -IC:\Users\matti\Desktop\SFML-2.6.2\include\SFML -external:IC:\Users\matti\Desktop\SFML-2.6.2\include -external:W0
+  INCLUDES = -IC:\Users\matti\Desktop\Esame\headers -IC:\Users\matti\Desktop\SFML-2.6.2\include\SFML -external:IC:\Users\matti\Desktop\SFML-2.6.2\include -external:W0
   OBJECT_DIR = CMakeFiles\Esame.dir
   OBJECT_FILE_DIR = CMakeFiles\Esame.dir
   TARGET_COMPILE_PDB = CMakeFiles\Esame.dir\

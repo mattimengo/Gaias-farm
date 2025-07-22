@@ -1,13 +1,12 @@
 #include <gtest/gtest.h>
-#include "../pch.h"  // 
+#include "../pch.h"  // contiene la definizione della classe Movement
 
 // ---------------------
 // Test Movement (mappa)
 // ---------------------
 
-
 TEST(MovementTest, InitialPosition) {
-    movement mov;
+    Movement mov;  // Dichiaro oggetto della classe Movement
 
     // Verifica che la posizione iniziale sia quella nel costruttore
     ASSERT_FLOAT_EQ(mov.pos_x, 907.0f);
@@ -16,7 +15,7 @@ TEST(MovementTest, InitialPosition) {
 }
 
 TEST(MovementTest, MoveUp) {
-    movement mov;
+    Movement mov;
 
     // Simula il movimento "up" modificando direttamente pos_y
     mov.pos_y -= mov.step;
@@ -26,7 +25,7 @@ TEST(MovementTest, MoveUp) {
 }
 
 TEST(MovementTest, Boundaries) {
-    movement mov;
+    Movement mov;
 
     // Controlla i limiti iniziali
     ASSERT_FLOAT_EQ(mov.max_heightchngd, 330.0f);

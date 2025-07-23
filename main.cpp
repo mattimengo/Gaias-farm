@@ -7,14 +7,25 @@
 
 using namespace std::chrono;
 
-//dichiarazioni funzioni
-int main(sf::RenderWindow& window, sf::Event event, bool* TP, bool* TM, bool* TG, bool* MT, bool* FO, bool* BA, bool* CA, bool* CO, bool* UV, bool* OL, bool* F, bool* D, bool* S1, bool* N1, bool* S2, bool* N2);
 
+
+//dichiarazioni funzioni
+int gioco(sf::RenderWindow& window, sf::Event& event, bool* TP, bool* TM, bool* TG, bool* MT, bool* FO, bool* BA, bool* CA, bool* CO, bool* UV, bool* OL, bool* F, bool* D, bool* S1, bool* N1, bool* S2, bool* N2);
+
+
+int main() {
+    sf::RenderWindow window(sf::VideoMode(1920, 1080), "Esame");
+    sf::Event event;
+
+    bool TP = false, TM = false, TG = false, MT = false, FO = false, BA = false, CA = false, CO = false, UV = false, OL = false, F = false, D = false, S1 = false, N1 = false, S2 = false, N2 = false;
+
+    return gioco(window, event, &TP, &TM, &TG, &MT, &FO, &BA, &CA, &CO, &UV, &OL, &F, &D, &S1, &N1, &S2, &N2);
+}
 
 
 
 //funzione per il gioco
-int main(sf::RenderWindow& window, sf::Event event, bool* TP, bool* TM, bool* TG, bool* MT, bool* FO, bool* BA, bool* CA, bool* CO, bool* UV, bool* OL, bool* F, bool* D, bool* S1, bool* N1, bool* S2, bool* N2) {
+int gioco(sf::RenderWindow& window, sf::Event& event, bool* TP, bool* TM, bool* TG, bool* MT, bool* FO, bool* BA, bool* CA, bool* CO, bool* UV, bool* OL, bool* F, bool* D, bool* S1, bool* N1, bool* S2, bool* N2) {
 	// Caricamento della texture solo quando necessario
 	sf::Texture texture;
 	if (!texture.loadFromFile("assets/map_2.jpg")) {

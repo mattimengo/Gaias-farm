@@ -5,8 +5,8 @@
     {
       "type": "default",
       "project": "CMakeLists.txt",
-      "projectTarget": "Esame.exe",
-      "name": "Esame.exe"
+      "projectTarget": "Esame.exe (build\\x64\\Release\\Esame.exe)",
+      "name": "Esame.exe (build\\x64\\Release\\Esame.exe)"
     }
   ]
 }

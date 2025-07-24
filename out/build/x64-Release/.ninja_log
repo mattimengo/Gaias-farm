@@ -1,13 +1,8 @@
 # ninja log v6
-22	651	7749779259038118	CMakeFiles/Esame.dir/avatar.cpp.obj	369bead8829e893
-10	4872	7749779258924429	CMakeFiles/Esame.dir/main.cpp.obj	cedfb59bf1c6e3b8
-22	841	7749785425381949	CMakeFiles/Esame.dir/avatar.cpp.obj	369bead8829e893
-17	4634	7749785425264963	CMakeFiles/Esame.dir/main.cpp.obj	cedfb59bf1c6e3b8
-22	6420	7749793791315470	CMakeFiles/Esame.dir/main.cpp.obj	cedfb59bf1c6e3b8
-22	70	7749794095131843	clean	8c45b54705a541e8
-33	1204	7749794135033246	CMakeFiles/Esame.dir/avatar.cpp.obj	369bead8829e893
-22	6108	7749794134913807	CMakeFiles/Esame.dir/main.cpp.obj	cedfb59bf1c6e3b8
-29	5988	7749798598856684	CMakeFiles/Esame.dir/main.cpp.obj	cedfb59bf1c6e3b8
-22	57	7749798730434295	clean	8c45b54705a541e8
 43	1341	7749798778212979	CMakeFiles/Esame.dir/avatar.cpp.obj	369bead8829e893
 34	6246	7749798778069023	CMakeFiles/Esame.dir/main.cpp.obj	cedfb59bf1c6e3b8
+22	57	7749798730434295	clean	8c45b54705a541e8
+32	1816	7750620528977309	CMakeFiles/Esame.dir/avatar.cpp.obj	369bead8829e893
+13	7090	7750620528787812	CMakeFiles/Esame.dir/main.cpp.obj	cedfb59bf1c6e3b8
+29	1532	7750652245208908	CMakeFiles/Esame.dir/main.cpp.obj	cedfb59bf1c6e3b8
+46	1645	7750658772285243	CMakeFiles/Esame.dir/main.cpp.obj	cedfb59bf1c6e3b8

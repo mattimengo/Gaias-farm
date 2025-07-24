@@ -41,7 +41,7 @@ elseif(APPLE)
 elseif(UNIX)
     # Linux: usa i file .so
     find_package(SFML REQUIRED COMPONENTS graphics audio window system network)
-    target_link_libraries(Esame SFML::graphics SFML::audio SFML::window SFML::system SFML::network)
+    target_link_libraries(Esame sfml-graphics sfml-audio sfml-window sfml-system sfml-network)
 endif()
 
 # Imposta lo standard C++ a 17

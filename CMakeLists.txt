@@ -65,6 +65,36 @@ add_custom_command(TARGET Esame POST_BUILD
     $<TARGET_FILE_DIR:Esame>/font
 )
 
+add_custom_command(TARGET Esame POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy
+    ${CMAKE_SOURCE_DIR}/sfml-window-2.dll
+    $<TARGET_FILE_DIR:Esame>/sfml-window-2.dll
+)
+
+add_custom_command(TARGET Esame POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy
+    ${CMAKE_SOURCE_DIR}/sfml-audio-2.dll
+    $<TARGET_FILE_DIR:Esame>/sfml-audio-2.dll
+)
+
+add_custom_command(TARGET Esame POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy
+    ${CMAKE_SOURCE_DIR}/sfml-graphics-2.dll
+    $<TARGET_FILE_DIR:Esame>/sfml-graphics-2.dll
+)
+
+add_custom_command(TARGET Esame POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy
+    ${CMAKE_SOURCE_DIR}/sfml-network-2.dll
+    $<TARGET_FILE_DIR:Esame>/sfml-network-2.dll
+)
+
+add_custom_command(TARGET Esame POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy
+    ${CMAKE_SOURCE_DIR}/sfml-system-2.dll
+    $<TARGET_FILE_DIR:Esame>/sfml-system-2.dll
+)
+
 # Messaggi di debug per verificare le configurazioni
 message(STATUS "Sistema operativo rilevato: ${CMAKE_SYSTEM_NAME}")
 message(STATUS "Percorso delle librerie SFML: ${CMAKE_SOURCE_DIR}/library")

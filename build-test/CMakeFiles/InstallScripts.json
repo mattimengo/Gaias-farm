@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/matti/Desktop/Esame/build-test/cmake_install.cmake",
+		"C:/Users/matti/Desktop/Esame/build-test/third_party/googletest-main/cmake_install.cmake",
+		"C:/Users/matti/Desktop/Esame/build-test/third_party/googletest-main/googlemock/cmake_install.cmake",
+		"C:/Users/matti/Desktop/Esame/build-test/third_party/googletest-main/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

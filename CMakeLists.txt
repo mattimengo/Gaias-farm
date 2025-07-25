@@ -2,6 +2,20 @@ cmake_minimum_required(VERSION 3.15)
 
 project(Esame LANGUAGES CXX)
 
+
+
+
+
+# Abilita il supporto ai test con CTest (tool integrato in CMake)
+enable_testing()
+
+
+add_subdirectory(third_party/googletest-main)
+
+
+
+
+
 # Imposta la directory di output in base al sistema operativo
 if(WIN32)
     set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/build/x64/Release)
@@ -19,6 +33,7 @@ set(SOURCES
     main.cpp
     avatar.cpp
 )
+
 
 add_executable(Esame ${SOURCES})
 
@@ -99,3 +114,82 @@ add_custom_command(TARGET Esame POST_BUILD
 message(STATUS "Sistema operativo rilevato: ${CMAKE_SYSTEM_NAME}")
 message(STATUS "Percorso delle librerie SFML: ${CMAKE_SOURCE_DIR}/library")
 message(STATUS "Directory di output: ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}")
+
+
+
+
+
+
+#TEST
+
+
+add_executable(testM
+  test/test_main.cpp
+  avatar.cpp
+)
+
+target_link_libraries(testM gtest_main)
+
+target_include_directories(testM PRIVATE ${PROJECT_SOURCE_DIR} ${CMAKE_SOURCE_DIR}/include)
+
+
+# Linka anche SFML per il target testM, come fatto per Esame
+if(WIN32)
+    target_link_libraries(testM
+        "${CMAKE_SOURCE_DIR}/library/sfml-graphics.lib"
+        "${CMAKE_SOURCE_DIR}/library/sfml-audio.lib"
+        "${CMAKE_SOURCE_DIR}/library/sfml-window.lib"
+        "${CMAKE_SOURCE_DIR}/library/sfml-system.lib"
+        "${CMAKE_SOURCE_DIR}/library/sfml-network.lib"
+    )
+elseif(APPLE)
+    target_link_libraries(testM SFML::graphics SFML::audio SFML::window SFML::system SFML::network)
+elseif(UNIX)
+    target_link_libraries(testM sfml-graphics sfml-audio sfml-window sfml-system sfml-network)
+endif()
+
+
+
+# Copia DLL 
+if(WIN32)
+    foreach(dll sfml-window-2.dll sfml-audio-2.dll sfml-graphics-2.dll sfml-network-2.dll sfml-system-2.dll)
+        add_custom_command(TARGET Esame POST_BUILD
+            COMMAND ${CMAKE_COMMAND} -E copy
+            ${CMAKE_SOURCE_DIR}/${dll}
+            $<TARGET_FILE_DIR:Esame>/${dll}
+        )
+        add_custom_command(TARGET testM POST_BUILD
+            COMMAND ${CMAKE_COMMAND} -E copy
+            ${CMAKE_SOURCE_DIR}/${dll}
+            $<TARGET_FILE_DIR:testM>/${dll}
+        )
+    endforeach()
+elseif(UNIX)
+    # Estensioni .so per Linux, .dylib per macOS
+    if(APPLE)
+        set(SFML_LIBS sfml-window.dylib sfml-audio.dylib sfml-graphics.dylib sfml-network.dylib sfml-system.dylib)
+    else()
+        set(SFML_LIBS libsfml-window.so libsfml-audio.so libsfml-graphics.so libsfml-network.so libsfml-system.so)
+    endif()
+
+    foreach(lib ${SFML_LIBS})
+        add_custom_command(TARGET Esame POST_BUILD
+            COMMAND ${CMAKE_COMMAND} -E copy
+            ${CMAKE_SOURCE_DIR}/library/${lib}
+            $<TARGET_FILE_DIR:Esame>/${lib}
+        )
+        add_custom_command(TARGET testM POST_BUILD
+            COMMAND ${CMAKE_COMMAND} -E copy
+            ${CMAKE_SOURCE_DIR}/library/${lib}
+            $<TARGET_FILE_DIR:testM>/${lib}
+        )
+    endforeach()
+endif()
+
+
+
+
+
+
+include(GoogleTest)
+gtest_discover_tests(testM)

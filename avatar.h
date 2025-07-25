@@ -22,6 +22,12 @@ public:
     float getPosX() const { return posx_g; }
     float getPosY() const { return posy_g; }
 
+	//metodo test
+	void setPos(float x, float y) {
+        posx_g = x;
+        posy_g = y;
+    }
+
 private:
 	//membri
 	float posx_g;

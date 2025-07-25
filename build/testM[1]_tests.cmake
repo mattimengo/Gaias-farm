@@ -1,0 +1,5 @@
+add_test([=[MovgameTest.InitialPosition]=]  C:/Users/matti/Desktop/Esame/build/build/x64/Release/Release/testM.exe [==[--gtest_filter=MovgameTest.InitialPosition]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[MovgameTest.InitialPosition]=]  PROPERTIES WORKING_DIRECTORY C:/Users/matti/Desktop/Esame/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[MovgameTest.LimitUpMovement]=]  C:/Users/matti/Desktop/Esame/build/build/x64/Release/Release/testM.exe [==[--gtest_filter=MovgameTest.LimitUpMovement]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[MovgameTest.LimitUpMovement]=]  PROPERTIES WORKING_DIRECTORY C:/Users/matti/Desktop/Esame/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  testM_TESTS MovgameTest.InitialPosition MovgameTest.LimitUpMovement)

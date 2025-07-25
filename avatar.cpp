@@ -23,18 +23,18 @@ movgame::movgame(): posx_g(928.0f), posy_g(600.0f), offset(1.0f),
 		gatec(false), gatem(false), gateb(false), gatez(false) {}
 
 
-void movgame::up_g(sf::RenderWindow& window) {
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
+void movgame::up_g(sf::RenderWindow& window, bool w_pressed) {
+        if (w_pressed) {
             posy_g -= offset;  // Movimento verso l'alto
             std::cout << "W pressed: New pos_y = " << posy_g << std::endl;
         }
 
         //limite con zoo
-        //if (posy_g < zoy) {
+        if (posy_g < zoy) {
             //limite
-        //    posy_g = clonezoy;
+            posy_g = clonezoy;
             //collegamento con lo zoo
-        //}
+        }
 
         //limite con cy3 a sx
         if (posy_g < cy3 && posx_g < cx1) {
@@ -64,9 +64,10 @@ void movgame::up_g(sf::RenderWindow& window) {
     }
 
 
-void movgame::down_g(sf::RenderWindow& window) {
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
-            posy_g += offset; // Movimento verso il basso
+void movgame::down_g(sf::RenderWindow& window, bool s_pressed) {
+
+        if (s_pressed) {
+            posy_g += offset;
             std::cout << "S pressed: New pos_y = " << posy_g << std::endl;
         }
 
@@ -76,7 +77,7 @@ void movgame::down_g(sf::RenderWindow& window) {
             posy_g = cy2;
         }
 
-        //limte con cy1 sx
+        //limite con cy1 sx
         if (posy_g > cy1 && posx_g < cx1) {
             posy_g = clonecy1;
         }
@@ -125,8 +126,9 @@ void movgame::down_g(sf::RenderWindow& window) {
 
     
 
-void movgame::left_g(sf::RenderWindow& window) {
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
+void movgame::left_g(sf::RenderWindow& window, bool a_pressed) {
+
+        if (a_pressed) {
             posx_g -= offset; // Movimento verso sinistra
             std::cout << "A pressed: New pos_x = " << posx_g << std::endl;
         }
@@ -148,9 +150,9 @@ void movgame::left_g(sf::RenderWindow& window) {
 
 
         //limite con bosco
-        //if (posx_g < bsx) {
-         //   posx_g = bsx;
-        //}
+        if (posx_g < bsx) {
+            posx_g = bsx;
+        }
 
 
 
@@ -158,8 +160,10 @@ void movgame::left_g(sf::RenderWindow& window) {
     }    
 
     
-void movgame::right_g(sf::RenderWindow& window) {
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
+void movgame::right_g(sf::RenderWindow& window, bool d_pressed) {
+   
+
+        if (d_pressed) {
             posx_g += offset; // Movimento verso destra
             std::cout << "D pressed: New pos_x = " << posx_g << std::endl;
         }

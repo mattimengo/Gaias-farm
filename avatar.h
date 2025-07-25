@@ -13,10 +13,10 @@ public:
 	movgame();
 
 	//metodi
-	void up_g(sf::RenderWindow& window);
-	void down_g(sf::RenderWindow& window);
-	void left_g(sf::RenderWindow& window);
-	void right_g(sf::RenderWindow& window);
+	void up_g(sf::RenderWindow& window, bool w_pressed);
+	void down_g(sf::RenderWindow& window, bool s_pressed);
+	void left_g(sf::RenderWindow& window, bool a_pressed);
+	void right_g(sf::RenderWindow& window, bool d_pressed);
 
 	// Getter per posizione
     float getPosX() const { return posx_g; }

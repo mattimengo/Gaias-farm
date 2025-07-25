@@ -111,10 +111,11 @@ int gioco(sf::RenderWindow& window, sf::Event& event, bool* TP, bool* TM, bool* 
 
 
 		//movimento
-		avatar.up_g(window);
-		avatar.down_g(window);
-		avatar.left_g(window);
-		avatar.right_g(window);
+		avatar.up_g(window, sf::Keyboard::isKeyPressed(sf::Keyboard::W));
+        avatar.down_g(window, sf::Keyboard::isKeyPressed(sf::Keyboard::S));
+        avatar.left_g(window, sf::Keyboard::isKeyPressed(sf::Keyboard::A));
+        avatar.right_g(window, sf::Keyboard::isKeyPressed(sf::Keyboard::D));
+
 
 		
 

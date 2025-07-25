@@ -164,29 +164,7 @@ if(WIN32)
             $<TARGET_FILE_DIR:testM>/${dll}
         )
     endforeach()
-elseif(UNIX)
-    # Estensioni .so per Linux, .dylib per macOS
-    if(APPLE)
-        set(SFML_LIBS sfml-window.dylib sfml-audio.dylib sfml-graphics.dylib sfml-network.dylib sfml-system.dylib)
-    else()
-        set(SFML_LIBS libsfml-window.so libsfml-audio.so libsfml-graphics.so libsfml-network.so libsfml-system.so)
-    endif()
-
-    foreach(lib ${SFML_LIBS})
-        add_custom_command(TARGET Esame POST_BUILD
-            COMMAND ${CMAKE_COMMAND} -E copy
-            ${CMAKE_SOURCE_DIR}/library/${lib}
-            $<TARGET_FILE_DIR:Esame>/${lib}
-        )
-        add_custom_command(TARGET testM POST_BUILD
-            COMMAND ${CMAKE_COMMAND} -E copy
-            ${CMAKE_SOURCE_DIR}/library/${lib}
-            $<TARGET_FILE_DIR:testM>/${lib}
-        )
-    endforeach()
 endif()
-
-
 
 
 

@@ -1,7 +1,0 @@
-# CMake generated Testfile for 
-# Source directory: C:/Users/matti/Desktop/Esame/third_party/googletest-main/googlemock
-# Build directory: C:/Users/matti/Desktop/Esame/build-test/third_party/googletest-main/googlemock
-# 
-# This file includes the relevant testing commands required for 
-# testing this directory and lists subdirectories to be tested as well.
-subdirs("../googletest")

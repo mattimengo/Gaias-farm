@@ -1,3 +1,0 @@
-C:/Users/matti/Desktop/Esame/out/build/x64-Debug/CMakeFiles/Esame.dir
-C:/Users/matti/Desktop/Esame/out/build/x64-Debug/CMakeFiles/edit_cache.dir
-C:/Users/matti/Desktop/Esame/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

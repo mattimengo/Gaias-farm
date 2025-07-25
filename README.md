@@ -1,50 +1,51 @@
 # Gaias-farm
 
-WINDOWS:
+## WINDOWS
 
-PROGETTO
+### PROGETTO
+```bash
 cd Gaias-farm
-mkdir build    (nome cartella a scelta)
+mkdir build    # nome cartella a scelta
 cd build
 cmake -DCMAKE_BUILD_TYPE=Release ..
 cmake --build . --config Release
 cd build/x64/Release/Release
 Esame.exe
+```
 
-TEST
+### TEST
+```bash
 cd Gaias-farm
-mkdir build-test  (nome cartella a scelta)
+mkdir build-test  # nome cartella a scelta
 cd build-test
 cmake ..
 cmake --build .
 cd build/x64/Release/Debug
 testM.exe
+```
 
+---
 
+## LINUX
 
-
-
-LINUX:
-
-PROGETTO
+### PROGETTO
+```bash
 cd Gaias-farm
-mkdir build    (nome cartella a scelta)
+mkdir build    # nome cartella a scelta
 cd build
 cmake -DCMAKE_BUILD_TYPE=Release ..
 cmake --build . --config Release
 cd build/linux/Release
-cd Esame.exe  
+./Esame.exe
+```
 
-TEST
+### TEST
+```bash
 cd Gaias-farm
-mkdir build-test  (nome cartella a scelta)
+mkdir build-test  # nome cartella a scelta
 cd build-test
 cmake ..
 cmake --build .
 cd build/linux/Release
-cd testM.exe
-
-
-
-
-
+./testM.exe
+```

@@ -61,6 +61,26 @@ int gioco(sf::RenderWindow& window, sf::Event& event, bool* TP, bool* TM, bool* 
     mappa.aggiungiMuro(Muro(1120, 770, 1130, 780));
     // ... aggiungi tutti i muri necessari
 
+	// Bordi schermo (esempio coordinate, da adattare se necessario)
+    mappa.aggiungiMuro(Muro(0, 0, 1920, 329));     // muro sopra (bordo superiore a y=330)
+    mappa.aggiungiMuro(Muro(0, 765, 1920, 1080));  // muro sotto (bordo inferiore a y=764)
+    mappa.aggiungiMuro(Muro(0, 0, 763, 1080));     // muro sinistro (bordo sinistro a x=764)
+    mappa.aggiungiMuro(Muro(1769, 0, 1920, 1080)); // muro destro (bordo destro a x=1768)
+
+    // Recinti verticali e orizzontali (coordinate approssimate dai controlli originali)
+    // Recinto alto sx: blocca posY > 370 e posX < 770
+    mappa.aggiungiMuro(Muro(0, 371, 770, 1080)); // muro verticale recinto sx da y=371 in giù
+
+    // Recinto alto dx: blocca posY > 370 e posX > 990
+    mappa.aggiungiMuro(Muro(991, 371, 1920, 1080)); // muro verticale recinto dx da y=371 in giù
+
+    // Recinto verticale sx: blocca posX < 770 e posY > 370
+    // Già coperto sopra con muro verticale da (0,371) a (770,1080)
+
+    // Recinto verticale dx: blocca posX > 990 e posY > 370
+    // Già coperto sopra con muro verticale da (991,371) a (1920,1080)
+
+
     // Crea personaggio nella posizione iniziale
     Personaggio avatar(928.0f, 600.0f, mappa);
 

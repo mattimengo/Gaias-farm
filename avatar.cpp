@@ -37,32 +37,12 @@ void Personaggio::muoviSu() {
     if (mappa.posizioneValida(posX, nuovaY)) {
         posY = nuovaY;
     }
-
-    //bordo superiore
-    if (posY < 330.0f) {
-        posY = 330.0f;
-    }
 }
 
 void Personaggio::muoviGiu() {
     float nuovaY = posY + velocita;
     if (mappa.posizioneValida(posX, nuovaY)) {
         posY = nuovaY;
-    }
-
-     //bordo inferiore
-    if (posY > 764.0f) {
-        posY = 764.0f;
-    }
-
-    //recinto alto sx
-    if (posY > 370.0f && posX < 770.0f) {
-        posY = 370.0f;
-    }
-
-    //recinto alto dx
-    if (posY > 370.0f && posX > 990.0f) {
-        posY = 370.0f;
     }
 }
 
@@ -71,35 +51,12 @@ void Personaggio::muoviSinistra() {
     if (mappa.posizioneValida(nuovaX, posY)) {
         posX = nuovaX;
     }
-
-    //bordo sinistro
-    if (posX < 764.0f) {
-        posX = -60.0f;
-    }
-
-
-    //recinto verticale sx
-    if (posX < 770.0f && posY > 370.0f) {
-        posX = 770.0f;
-    }
 }
 
 void Personaggio::muoviDestra() {
     float nuovaX = posX + velocita;
     if (mappa.posizioneValida(nuovaX, posY)) {
         posX = nuovaX;
-    }
-
-    //bordo destro
-    if (posX> 1768.0f) {
-        posX = 1769.0f;
-    }
-
-
-    //recinto verticale dx
-    if (posX > 990.0f && posY > 370.0f) {
-        posX = 990.0f;
-
     }
 }
 

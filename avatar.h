@@ -1,94 +1,59 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
 #include <iostream>
+#include <vector>
 
 #ifndef AVATAR_H
 #define AVATAR_H
 
 
-//classe per il movimento di map2
-class movgame {
+// Classe per rappresentare un muro o area invalicabile
+class Muro {
 public:
-	//costruttore
-	movgame();
+    Muro(float x1, float y1, float x2, float y2); // rettangolo delimitante
+    bool contiene(float x, float y) const;
 
-	//metodi
-	void up_g(sf::RenderWindow& window, bool w_pressed);
-	void down_g(sf::RenderWindow& window, bool s_pressed);
-	void left_g(sf::RenderWindow& window, bool a_pressed);
-	void right_g(sf::RenderWindow& window, bool d_pressed);
+private:
+    float x_min, y_min, x_max, y_max;
+};
 
-	// Getter per posizione
-    float getPosX() const { return posx_g; }
-    float getPosY() const { return posy_g; }
+// Classe Mappa che contiene i muri
+class Mappa {
+public:
+    Mappa();
+    void aggiungiMuro(const Muro& muro);
+    bool posizioneValida(float x, float y) const;
 
-	//metodo test
+private:
+    std::vector<Muro> muri;
+};
+
+// Classe Personaggio che si muove nella mappa
+class Personaggio {
+public:
+    Personaggio(float x, float y, const Mappa& mappa);
+
+    float getVelocita() const { return velocita; }
+
+    void muoviSu();
+    void muoviGiu();
+    void muoviSinistra();
+    void muoviDestra();
+
+    float getX() const;
+    float getY() const;
+
+    //metodo test
 	void setPos(float x, float y) {
-        posx_g = x;
-        posy_g = y;
+        posX = x;
+        posY = y;
     }
 
 private:
-	//membri
-	float posx_g;
-	float posy_g;
-	float offset;
-
-	float cx1;
-	float cx2;
-	float cx22;
-	float cx3;
-	float cx33;
-	float cx4;
-	float cx44;
-	float cx5;
-	float cx6;
-	float cx62;
-	float cx7;
-	float cx8;
-	float cx9;
-	float cx10;
-	float cx11;
-
-	float cy1;
-	float clonecy1;
-	float cy2;
-	float cy3;
-	float clonecy3;
-	float cy4;
-	float cy44;
-	float cy5;
-	float clonecy5;
-	float cy3N;
-
-	float bsx; //bosco
-
-	float zoy;  //zoo
-	float clonezoy;
-
-	float gy1;
-	float gy2;
-
-	float GY1;
-
-	float lx;
-	float ly;
-	float gx;
-	float gy;
-
-
-	bool gatef;
-	bool gatel;
-	bool gateg;
-	bool gatec;
-	bool gatem;
-	bool gateb;
-	bool gatez;
-
+    float posX, posY;
+    float velocita;
+    const Mappa& mappa;
 };
-
-
-
 
 
 #endif // !X

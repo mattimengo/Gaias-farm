@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 #include "avatar.h"
 
-
+// Inizializzazione Google Test
 int main(int argc, char **argv) {
     ::testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
@@ -9,56 +9,52 @@ int main(int argc, char **argv) {
 
 class MovgameTest : public ::testing::Test {
 protected:
-    movgame avatar;
-
-    sf::RenderWindow window{sf::VideoMode(800, 600), "Test Window"};
+    Mappa mappa;              // Oggetto mappa necessario per Personaggio
+    Personaggio avatar{928.0f, 600.0f, mappa};  // Inizializzazione con posizione e mappa
 
     void SetUp() override {
         avatar.setPos(928.0f, 600.0f);
     }
 
-    float getX() { return avatar.getPosX(); }
-    float getY() { return avatar.getPosY(); }
+    float GetX() { return avatar.getX(); }
+    float GetY() { return avatar.getY(); }
 };
 
 // Test: la posizione iniziale è quella attesa
 TEST_F(MovgameTest, InitialPosition) {
-    EXPECT_FLOAT_EQ(avatar.getPosX(), 928.0f);
-    EXPECT_FLOAT_EQ(avatar.getPosY(), 600.0f);
+    EXPECT_FLOAT_EQ(avatar.getX(), 928.0f);
+    EXPECT_FLOAT_EQ(avatar.getY(), 600.0f);
 }
 
-// Test dei limiti di movimento verso l'alto (up_g)
-// Esempio: se posy_g < cy3 e posx_g < cx1, posy_g deve essere clonecy3
-TEST_F(MovgameTest, LimitUpMovement) {
-    avatar.setPos(860.0f, 570.0f);  // posx_g < cx1 (872), posy_g < cy3 (585)
-    avatar.up_g(window,true); 
-    EXPECT_FLOAT_EQ(avatar.getPosY(), 585.0f);  // clonecy3
+// Esempio per movimento verso l'alto
+TEST_F(MovgameTest, MoveUpBasic) {
+    avatar.setPos(100.0f, 100.0f);
+    float oldY = GetY();
+    avatar.muoviSu();
+    EXPECT_FLOAT_EQ(avatar.getY(), oldY - avatar.getVelocita());
 }
 
-// Test movimento verso il basso senza limiti attivi
+
+// Test movimento verso il basso (muoviGiu)
 TEST_F(MovgameTest, MoveDownBasic) {
-    float oldY = getY();
-    avatar.down_g(window, true);
-    EXPECT_FLOAT_EQ(avatar.getPosY(), oldY + 1.0f);
+    avatar.setPos(100.0f, 100.0f);
+    float oldY = GetY();
+    avatar.muoviGiu();
+    EXPECT_FLOAT_EQ(avatar.getY(), oldY + avatar.getVelocita());
 }
 
-// Test limite con cy2 (posy_g > cy2)
-TEST_F(MovgameTest, LimitDownMovement) {
-    avatar.setPos(900.0f, 780.0f);  // posy_g > cy2 (772)
-    avatar.down_g(window,true);
-    EXPECT_FLOAT_EQ(avatar.getPosY(), 772.0f);  // cy2
-}
-
-// Test movimento verso sinistra (left_g)
+// Test movimento verso sinistra (muoviSinistra)
 TEST_F(MovgameTest, MoveLeftBasic) {
-    float oldX = getX();
-    avatar.left_g(window,true);
-    EXPECT_FLOAT_EQ(avatar.getPosX(), oldX - 1.0f);
+    avatar.setPos(100.0f, 100.0f);
+    float oldX = GetX();
+    avatar.muoviSinistra();
+    EXPECT_FLOAT_EQ(avatar.getX(), oldX - avatar.getVelocita());
 }
 
-// Test movimento verso destra (right_g)
+// Test movimento verso destra (muoviDestra)
 TEST_F(MovgameTest, MoveRightBasic) {
-    float oldX = getX();
-    avatar.right_g(window,true);
-    EXPECT_FLOAT_EQ(avatar.getPosX(), oldX + 1.0f);
+    avatar.setPos(100.0f, 100.0f);
+    float oldX = GetX();
+    avatar.muoviDestra();
+    EXPECT_FLOAT_EQ(avatar.getX(), oldX + avatar.getVelocita());
 }

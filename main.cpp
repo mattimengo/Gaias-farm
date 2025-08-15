@@ -28,7 +28,7 @@ int main() {
 int gioco(sf::RenderWindow& window, sf::Event& event, bool* TP, bool* TM, bool* TG, bool* MT, bool* FO, bool* BA, bool* CA, bool* CO, bool* UV, bool* OL, bool* F, bool* D, bool* S1, bool* N1, bool* S2, bool* N2) {
 	// Caricamento della texture solo quando necessario
 	sf::Texture texture;
-	if (!texture.loadFromFile("assets/map_2.jpg")) {
+	if (!texture.loadFromFile("assets/map1.jpg")) {
 		std::cerr << "Failed to create texture from file!" << std::endl;
 		return -1;
 	}
@@ -50,50 +50,25 @@ int gioco(sf::RenderWindow& window, sf::Event& event, bool* TP, bool* TM, bool* 
 
 	
 
-	//immagine acqua 
-	sf::Texture textp24;
-	if (!textp24.loadFromFile("assets/acqua.png")) {
-		std::cerr << "Failed to create texture from file!" << std::endl;
-		return -1;
-	}
-	sf::Sprite spritep24(textp24);
-	spritep24.setPosition(-999, -999);
-
-
-
-	//immagine campo girasoli
-	sf::Texture textg;
-	if (!textg.loadFromFile("assets/campogirasoli.png")) {
-		std::cerr << "Failed to create texture from file!" << std::endl;
-		return -1;
-	}
-	sf::Sprite spriteg(textg);
-	spriteg.setPosition(-999, -999);
-
-	//campo girasoli
-	spriteg.setPosition(1120, 435);
-
-
-	
-
-	
-
-
-
-
-
-	//movimento avatar
-	movgame avatar;
-
 	
 	
 
 	
+	// Costruzione mappa e muri
+    Mappa mappa;
+    // Aggiungi muri con coordinate (esempio)
+    mappa.aggiungiMuro(Muro(871, 600, 960, 620));
+    mappa.aggiungiMuro(Muro(1120, 770, 1130, 780));
+    // ... aggiungi tutti i muri necessari
 
-	bool recapShown = true;
-	bool animalsShown = false;
-	bool comandiShown = false;
-	bool comandiDisappear = false;
+    // Crea personaggio nella posizione iniziale
+    Personaggio avatar(928.0f, 600.0f, mappa);
+
+
+
+	
+	
+
 
 
 
@@ -110,23 +85,23 @@ int gioco(sf::RenderWindow& window, sf::Event& event, bool* TP, bool* TM, bool* 
 		sf::Vector2i mouse = sf::Mouse::getPosition(window);
 
 
-		//movimento
-		avatar.up_g(window, sf::Keyboard::isKeyPressed(sf::Keyboard::W));
-        avatar.down_g(window, sf::Keyboard::isKeyPressed(sf::Keyboard::S));
-        avatar.left_g(window, sf::Keyboard::isKeyPressed(sf::Keyboard::A));
-        avatar.right_g(window, sf::Keyboard::isKeyPressed(sf::Keyboard::D));
+		// Gestione input movimento
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) avatar.muoviSu();
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) avatar.muoviGiu();
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) avatar.muoviSinistra();
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) avatar.muoviDestra();
+
+		
+
+		// Aggiorna posizione sprite avatar
+        spritea.setPosition(avatar.getX(), avatar.getY());
 
 
 		
 
-		// Aggiorna la posizione dello sprite dell'avatar
-		spritea.setPosition(avatar.getPosX(), avatar.getPosY());
-
-
 
 		window.clear(sf::Color::Black);
-		window.draw(sprite);		
-		window.draw(spriteg);	
+		window.draw(sprite);			
 		window.draw(spritea);		
 		window.display();
 	}
